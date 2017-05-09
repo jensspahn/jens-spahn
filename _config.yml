@@ -4,7 +4,7 @@ encoding: "utf-8"
 description: "Homepage von Jens Spahn MdB"
 
 baseurl: ""
-url: "http://www.danbender.net"
+url: "https://jensspahn.github.io"
 
 twitter_username: "jensspahn"
 fasebook_username: "jensspahn"
