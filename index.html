@@ -1,0 +1,73 @@
+---
+layout: home
+title: Willkommen
+---
+
+<section class="home__wrapper">
+  <div class="home__hero">
+    {% include header.html %}
+
+    <div class="home__slider">
+      <img class="slider__img--home" src="{{ '/assets/images/jens_spahn_1.jpg' | absolute_url }}" alt="{{site.data.profil.name}}" />
+      <img class="slider__img--home" src="{{ '/assets/images/jens_spahn_2.jpg' | absolute_url }}" alt="{{site.data.profil.name}}" />
+      <img class="slider__img--home" src="{{ '/assets/images/jens_spahn_3.jpg' | absolute_url }}" alt="{{site.data.profil.name}}" />
+      <img class="slider__img--home" src="{{ '/assets/images/jens_spahn_4.jpg' | absolute_url }}" alt="{{site.data.profil.name}}" />
+      <img class="slider__img--home" src="{{ '/assets/images/jens_spahn_5.jpg' | absolute_url }}" alt="{{site.data.profil.name}}" />
+    </div>
+
+    <div class="home__subscribe">
+      <div class="subscribe__header">
+        <h3 class="subscribe__headline">
+          Immer auf dem neuesten Stand:
+        </h3>
+
+        <div class="subscribe__toggle">
+          <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="subcribe__content">
+        <p class="subscribe__subline">
+          spahnaktuell per Newsletter oder Whatsapp-Nachricht
+        </p>
+
+        <form class="home__form" action="//jensspahn.us2.list-manage.com/subscribe/post?u=432a88bda6f14e7b569b7bbc4&amp;id=fa99a965fa" method="post" name="mc-embedded-subscribe-form" target="_blank" lang="de">
+
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Emailadresse" required>
+          <input type="text" value="" name="MMERGE3[zip]" class="zip" id="mce-MMERGE3-zip" placeholder="PLZ" pattern="\d*" maxlength="5" required>
+
+          <!-- Prevents bot signups -->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_432a88bda6f14e7b569b7bbc4_fa99a965fa" tabindex="-1" value="">
+          </div>
+
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </form>
+
+        <p class="home__whatsapp-number">
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;{{site.data.kontakt.whatsapp}}
+        </p>
+
+        <a class="home__contact-link" href="{{ '/kontakt' | absolute_url }}">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>&nbsp;weitere Informationen
+        </a>
+      </div>
+    </div>
+
+    <a href="#feed">
+      <div class="home__down-arrow">
+        <p>News</p> <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+    </a>
+  </div>
+
+  <ul class="juicer-feed" data-feed-id="jensspahn" data-per="24" data-after="translateJuicer()" name="feed">
+    <h1 class="referral">
+      @jensspahn
+      <a href="https://www.juicer.io">Powered by Juicer</a>
+    </h1>
+  </ul>
+</section>

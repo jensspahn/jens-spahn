@@ -1,0 +1,20 @@
+title: "Jens Spahn MdB"
+permalink: "pretty"
+encoding: "utf-8"
+description: "Homepage von Jens Spahn MdB"
+
+baseurl: ""
+url: "http://www.danbender.net"
+
+twitter_username: "jensspahn"
+fasebook_username: "jensspahn"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  hard_wrap: true
+sass:
+  style: compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
