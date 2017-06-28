@@ -1,0 +1,200 @@
+.kontakt__form {
+  border: 1px solid $grey;
+  margin: 0 auto 5rem;
+  max-width: 60rem;
+  padding: 2rem;
+
+  h3 {
+    color: $orange;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+.kontakt__newsletter,
+.kontakt__whatsapp {
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+.kontakt__newsletter {
+  margin-bottom: 2rem;
+}
+
+.newsletter__form {
+  margin: 1rem 0 0;
+
+  input,
+  button[type=submit] {
+    border: 0;
+    border-radius: 0;
+    display: block;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  input.email {
+    width: 80%;
+    display: inline-block;
+  }
+
+  input.zip,
+  button[type=submit] {
+    display: inline-block;
+  }
+
+  input {
+    background-color: $light-grey;
+  }
+
+  input.zip {
+    margin: 0;
+    width: 5rem;
+  }
+
+  .fa-envelope-o {
+    font-size: 2rem;
+    display: block;
+    margin: 0 auto 1rem;
+    text-align: center;
+  }
+
+  button[type=submit] {
+    background-color: $orange;
+    color: #fff;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+
+    &:hover {
+      background-color: lighten($orange, 10%);
+      cursor: pointer;
+    }
+  }
+}
+
+.whatsapp-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0 0;
+  text-align: center;
+
+  .fa-whatsapp {
+    display: block;
+    font-size: 2rem;
+    margin: 0 auto 1rem;
+    text-align: center;
+  }
+}
+
+.kontakt__info {
+  text-align: center;
+}
+
+.info__wrapper {
+  margin: 0 auto;
+  max-width: 60rem;
+
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+    color: #fff;
+  }
+}
+
+.info__team,
+.info__details {
+  display: block;
+}
+
+.info__team {
+  background-color: $light-grey;
+  display: block;
+  height: 288px;
+  margin-bottom: 1rem;
+}
+
+.info__details {
+  background-color: $orange;
+  color: #fff;
+  padding: 1rem;
+}
+
+.info__headline,
+.info__phone,
+.info__email {
+  font-weight: bold;
+}
+
+.info__address {
+  font-weight: 300;
+}
+
+.info__social {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+
+  a + a {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .whatsapp-number {
+    font-size: 2rem;
+    text-align: left;
+
+    .fa-whatsapp {
+      display: inline-block;
+      font-size: 2rem;
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .newsletter__form {
+    display: flex;
+    align-items: center;
+
+    .fa-envelope-o {
+      margin: 0 1rem 0 0;
+    }
+
+    input.email {
+      display: inline-block;
+      width: auto;
+    }
+
+    input.email,
+    input.zip {
+      margin-right: 0.5rem;
+    }
+
+    button[type=submit] {
+      margin: 0;
+    }
+  }
+
+  .info__wrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: 60rem;
+  }
+
+  .info__team,
+  .info__details {
+    display: inline-block;
+  }
+
+  .info__team {
+    flex: 1 0 0;
+    height: auto;
+    margin: 0;
+  }
+
+  .info__details {
+    margin-left: 1rem;
+  }
+}
