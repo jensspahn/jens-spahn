@@ -34,7 +34,8 @@
   }
 
   input.email {
-    width: 100%;
+    width: 80%;
+    display: inline-block;
   }
 
   input.zip,
@@ -63,7 +64,6 @@
     color: #fff;
     padding-left: 0.7rem;
     padding-right: 0.7rem;
-    margin: 0.7rem 0.5rem;
 
     &:hover {
       background-color: lighten($orange, 10%);
