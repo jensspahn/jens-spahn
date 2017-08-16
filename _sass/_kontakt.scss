@@ -109,10 +109,21 @@
 }
 
 .info__team {
-  background-color: $light-grey;
+  // url(<%= asset_path "team-web.jpg" %>) center center no-repeat;
+  // background: url({{ '/assets/images/team/team-web.jpg' | absolute_url }}) center center no-repeat;
+  background: url(<%= asset_path "team-web.jpg" %>) center center no-repeat;
   display: block;
-  height: 288px;
+  width: 100%;
+  // max-height: 288px;
   margin-bottom: 1rem;
+  background-size: cover;
+  //
+  // img {
+  //   // background-size:cover;
+  //   // height:100%;
+  //   // overflow-y: hidden;
+  //   max-height: 288px;
+  // }
 }
 
 .info__details {
