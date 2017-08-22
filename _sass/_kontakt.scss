@@ -118,7 +118,7 @@
   background-color: $orange;
   color: #fff;
   padding: 1rem;
-  max-height: 21.5rem;
+  max-height: 23.9rem;
 }
 
 .info__headline,
@@ -192,7 +192,7 @@
     flex: 1 0 0;
     height: auto;
     margin: 0;
-    background: #fff;
+    background: #fff !important;
   }
 
   .info__details {
