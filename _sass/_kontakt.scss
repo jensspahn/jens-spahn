@@ -109,17 +109,16 @@
 }
 
 .info__team {
-  background: url('/assets/images/team/team-web.jpg') center center no-repeat;
   display: block;
   width: 100%;
   margin-bottom: 1rem;
-  background-size: cover;
 }
 
 .info__details {
   background-color: $orange;
   color: #fff;
   padding: 1rem;
+  max-height: 21.5rem;
 }
 
 .info__headline,
